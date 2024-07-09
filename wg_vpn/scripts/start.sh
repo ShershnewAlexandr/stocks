@@ -1,0 +1,1 @@
+docker run -d --cap-add=NET_ADMIN wireguard-vpn

@@ -6,6 +6,9 @@ RUN apk update && apk add --no-cache \
     iproute2 \
     iptables
 
+# Включаем пересылку пакетов внутри Docker-образа
+RUN echo "net.ipv4.ip_forward = 1" > /etc/sysctl.conf
+
 # Создаем рабочую директорию
 WORKDIR /etc/wireguard
 
