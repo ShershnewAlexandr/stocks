@@ -1,0 +1,8 @@
+node_modules
+screenshots
+reports
+parseData
+.idea
+build
+log
+src/scripts/responses/*
